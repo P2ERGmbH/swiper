@@ -4,6 +4,7 @@ const elapsed = require('elapsed-time-logger');
 
 const buildJsCore = require('./build-js-core');
 const buildJsBundle = require('./build-js-bundle');
+const buildJsMinimalBundle = require('./build-js-minimal-bundle');
 const buildTypes = require('./build-types');
 const buildReact = require('./build-react');
 const buildVue = require('./build-vue');
@@ -69,6 +70,7 @@ class Build {
     .add('vue', buildVue)
     .add('svelte', buildSvelte)
     .add('angular', buildAngular)
+    .add('minimal', buildJsMinimalBundle)
     .run();
   elapsed.end('build', chalk.bold.green('Build completed'));
 })();

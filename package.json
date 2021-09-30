@@ -14,6 +14,7 @@
     "build:prod": "node scripts/build --prod",
     "build:prod:core": "npm run build:core -- --prod",
     "build:prod:bundle": "npm run build:bundle -- --prod",
+    "build:prod:minimal": "npm run build:minimal -- --prod",
     "build:prod:svelte": "npm run build:svelte -- --prod",
     "build:prod:angular": "npm run build:angular -- --prod",
     "build:prod:react": "npm run build:react -- --prod",
